@@ -8,16 +8,18 @@ import DescriptionThree from "@/customComponents/DescriptionThree";
 import Layout from "@/customComponents/Layout";
 import CostDescription from "@/customComponents/CostDescription";
 import DescriptionFour from "@/customComponents/DescriptionFour";
+import Footer from "@/customComponents/Footer";
 const HomePage = () => {
   return (
-    <Layout>
+    <>
       <NavigationBar></NavigationBar>
       <Description />
       <DescriptionTwo />
       <DescriptionThree />
       <CostDescription />
       <DescriptionFour />
-    </Layout>
+      <Footer/>
+    </>
   );
 };
 
