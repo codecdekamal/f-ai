@@ -24,30 +24,7 @@ const CardInfo = [
 const HomePage = () => {
   return (
     <>
-      <header>
-        <nav className="h-20 w-full bg-[#131517] flex flex-row justify-between items-center text-gray-500 px-6 ">
-          <div className="lg:w-1/3 hover:text-rose-500 text-4xl font-roboto font-semibold text-rose-500">
-            f-ai
-          </div>
-          <div className="hidden  lg:flex flex-row justify-between items-center gap-3 lg:gap-10">
-            <div className="hover:text-rose-600">Home</div>
-            <div className="hover:text-rose-600">Vision</div>
-            <div className="hover:text-rose-600">Solutions</div>
-            <div className="hover:text-rose-600">Plans and prices</div>
-            <div className="hover:text-rose-600 flex flex-row gap-1">
-              <div className="text-2xl">
-                <IoMdContact />
-              </div>
-              <div>login</div>
-            </div>
-            <div>
-              <Button variant="outline">get started</Button>
-            </div>
-            <div className="hover:text-rose-600">icon</div>
-          </div>
-          
-        </nav>
-      </header>
+     <NavigationBar></NavigationBar>
       <main className="h-[80vh] w-screen bg-black/90 grid grid-cols-6 ">
         <div className="col-span-4 ">
           <div className="w-full h-full  flex flex-col justify-between py-5 pl-12">
@@ -151,17 +128,16 @@ const HomePage = () => {
             <div className="relative col-span-3 lg:px-20 h-full border-l border-gray-600 mt-16 ">
               <div className=" grid gap-1 py-3 px-4  items-center gap-x-3 gap-y-4 ">
                 <p className="font-poppins leading-7 tracking-wide text-white/60 text-center text-balance md:px-14">
-                At F-ai, we offer a range of financial services to help you
-                manage your financial records and reporting requirements. From
-                bookkeeping to financial planning, we have you covered. Let us
-                help you take your business to the next level.
+                  At F-ai, we offer a range of financial services to help you
+                  manage your financial records and reporting requirements. From
+                  bookkeeping to financial planning, we have you covered. Let us
+                  help you take your business to the next level.
                 </p>
                 <div className="lg:px-24">
-                <Button variant="mainButton" size="lg">
-         Learn More
-                </Button>
+                  <Button variant="mainButton" size="lg">
+                    Learn More
+                  </Button>
                 </div>
-               
               </div>
             </div>
           </div>
