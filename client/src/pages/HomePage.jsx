@@ -10,8 +10,8 @@ const HomePage = () => {
     <>
      <NavigationBar></NavigationBar>
      <Description/>
-    <DescriptionTwo/>
-    <DescriptionThree/>
+     <DescriptionTwo/>
+     <DescriptionThree/>
     </>
   );
 };
