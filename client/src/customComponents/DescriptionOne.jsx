@@ -12,7 +12,7 @@ const Description = () => {
             <div>
               <p className="tracking-wide lg:leading-loose font-bold text-4xl text-white/70">
                 Next-Gen solution for Bookkeeping Accounting and Financial
-                Reporting Powered by AI
+                Reporting <i>Powered by AI</i> 
               </p>
             </div>
             <div className="tracking-wide leading-relaxed font-bold font-monospace text-lg  text-white/70">
