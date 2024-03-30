@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 const NavigationBar = () => {
   return (
     <>
-      <header>
-        <nav className="h-20 w-full bg-[#131517] flex flex-row justify-between items-center text-gray-500 px-6 ">
+      <header className='relative'>
+        <nav className="fixed top-0 z-50 h-20 w-full bg-[#131517] flex flex-row justify-between items-center text-gray-500 px-6 ">
           <div className="lg:w-1/3 hover:text-rose-500 text-4xl font-roboto font-semibold text-rose-500">
             f-ai
           </div>
