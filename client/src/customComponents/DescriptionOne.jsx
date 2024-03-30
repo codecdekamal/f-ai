@@ -4,7 +4,7 @@ import {motion} from "framer-motion"
 const Description = () => {
   return (
     <>
-        <main  className="h-[80vh] w-screen bg-black/90 grid grid-cols-6 ">
+        <main  className="h-[100vh] w-screen bg-black/90 grid grid-cols-6 ">
         <div className="col-span-4 ">
           <div className="w-full h-full  flex flex-col justify-between py-5 pl-12">
             <h1 className="font-bold font-monospace text-6xl text-rose-500">
