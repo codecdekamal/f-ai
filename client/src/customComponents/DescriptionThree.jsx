@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 const DescriptionThree = () => {
   return (
     <>
-            <section>
+         <section>
         <div className="lg:min-h-fit w-full bg-black/90 relative box-border px-16 py-10">
           <div className=" border  border-gray-600 h-screen w-full grid grid-cols-5">
             <div className="col-span-2  border-r border-gray-600">
@@ -17,7 +17,7 @@ const DescriptionThree = () => {
                 <div></div>
               </article>
             </div>
-            <div className="relative col-span-3 lg:px-20 h-full border-l border-gray-600 mt-16 ">
+            <div className="relative col-span-3 lg:px-20 h-full  border-gray-600 mt-16 ">
               <div className=" grid gap-1 py-3 px-4  items-center gap-x-3 gap-y-4 ">
                 <p className="font-poppins leading-7 tracking-wide text-white/60 text-center text-balance md:px-14">
                   At F-ai, we offer a range of financial services to help you
