@@ -45,7 +45,7 @@ const PlansAndPricingPage = () => {
     ]
 
     return (
-        <div className="flex flex-col min-h-screen bg-black text-white bg-black/90">
+        <div className="flex flex-col min-h-screen text-white bg-black/90 w-screen">
             <div className='flex flex-col mb-[10vh]'>
                 <NavigationBar />
             </div>
