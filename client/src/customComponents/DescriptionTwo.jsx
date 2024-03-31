@@ -1,5 +1,6 @@
 import React from 'react'
 import MainCard from './MainCard';
+import {motion} from "framer-motion"
 const CardInfo = [
     {
       title: "Cloud-Based Financial Solutions",
@@ -26,12 +27,12 @@ const DescriptionTwo = () => {
           <div className=" border  border-gray-600 h-full w-full grid grid-cols-5">
             <div className="col-span-2 h-3/4 ">
               <article className="flex flex-col gap-5 lg:px-28 pt-16 text-white px-10 text-balance">
-                <div>
+                <motion.div initial={{scale:0.5,opacity:0.5, x:-300}} whileInView={{opacity:1,x:0,scale:1}} transition={{duration:1.5}}>
                   <h1 className="font-roboto tracking-wide font-medium text-3xl capitalize">
                     Expert Financial Guidance for Your Business
                   </h1>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div initial={{scale:0.5,opacity:0.5, x:-300}} whileInView={{opacity:1,x:0,scale:1}} transition={{duration:1.5}}>
                   <p className="font-poppins leading-7 tracking-wide text-white/60">
                     At f-ai, we specialize in providing finance accounting,
                     bookkeeping, and financial reporting services to help
@@ -41,7 +42,7 @@ const DescriptionTwo = () => {
                     for making Informed decisions. Our Team is dedicated to
                     providing you with the best financial guidance available.
                   </p>
-                </div>
+                </motion.div>
               </article>
             </div>
             <div className="relative col-span-3 lg:px-20 h-full border-l border-gray-600">

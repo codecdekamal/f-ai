@@ -6,17 +6,15 @@ import SignupPage from './pages/SignupPage'
 import SigninPage from './pages/SigninPage'
 import PlansAndPricingPage from './pages/PlansAndPricingPage'
 function App() {
-
   return (
-<>
-    <Routes>
-      <Route path = '/' element = {<HomePage/>} ></Route>
-      <Route path = 'signup' element = {<SignupPage/>}></Route>
-      <Route path = 'signin' element = {<SigninPage/>}></Route>
-      <Route path = 'plans-prices' element = {<PlansAndPricingPage/>} />
-    </Routes>
-</>
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signin" element={<SigninPage/>}></Route>
+        <Route path="/signup" element={<SignUp/>}> </Route>
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
