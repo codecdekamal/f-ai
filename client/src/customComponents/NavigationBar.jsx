@@ -20,7 +20,7 @@ const NavigationBar = () => {
           <div className="lg:w-1/3 hover:text-rose-500 text-4xl font-roboto font-semibold text-rose-500">
             f-ai
           </div>
-          <div className="hidden lg:flex flex-row justify-between items-center gap-3 lg:gap-10">
+          <div className="hidden lg:flex flex-row justify-between items-center gap-3 lg:gap-10 text-sm">
             <Link to='/'>
               <div className="hover:text-rose-600 cursor-pointer">Home</div>
             </Link>
@@ -30,8 +30,14 @@ const NavigationBar = () => {
             <Link to='/solutions'>
               <div className="hover:text-rose-600 cursor-pointer">Solutions</div>
             </Link>
+            <Link to='/subscription'>
+              <div className="hover:text-rose-600 cursor-pointer">Subscription</div>
+            </Link>
+            <Link to='/connect'>
+              <div className="hover:text-rose-600 cursor-pointer">Connect</div>
+            </Link>
             <Link to='/plans-prices'>
-              <div className="hover:text-rose-600 cursor-pointer">Plans and prices</div>
+              <div className="hover:text-rose-600 cursor-pointer">Plans and pricing</div>
             </Link>
             {!isAuthenticated ? (
               <Link to='/signin'>
