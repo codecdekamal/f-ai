@@ -1,0 +1,132 @@
+// data.js
+
+const financialTasks = [
+  "Recording Financial Transactions",
+  "Accounts Payable Management",
+  "Accounts Receivable Management",
+  "Bank Reconciliation",
+  "Payroll Processing",
+  "Financial Reporting",
+  "Tax Preparation",
+  "Expense Management",
+  "Inventory Management",
+  "Fixed Asset Management",
+  "Financial Analysis",
+  "Budgeting and Forecasting",
+  "Cash Flow Management",
+  "Compliance and Regulatory Reporting",
+  "Advisory Services",
+];
+
+const itTasks = [
+  "Financial statement preparation",
+  "Auditing",
+  "Tax planning and preparation",
+  "Budgeting and forecasting",
+  "Internal control review",
+  "Management advisory services",
+  "Business valuation",
+  "Forensic accounting",
+  "Cost accounting",
+  "Cash flow management",
+  "Merger and acquisition assistance",
+  "Risk management",
+  "International accounting and tax services",
+  "Software implementation and training",
+  "Financial analysis and reporting",
+];
+
+const reportingTasks = [
+  "Financial reporting",
+  "Management reporting",
+  "Regulatory reporting",
+  "Compliance reporting",
+  "Performance reporting",
+  "Budget reporting",
+  "Tax reporting",
+  "Sustainability reporting",
+  "External financial reporting (stakeholders, investors, etc.)",
+  "Internal financial reporting (management, board of directors, etc.)",
+  "Audit reporting",
+  "Risk reporting",
+  "Environmental reporting",
+  "Social responsibility reporting",
+  "Customized or ad-hoc reporting",
+];
+
+const auditTasks = [
+  "Financial statement audit",
+  "Internal audit",
+  "Compliance audit",
+  "Operational audit",
+  "IT audit (Information Technology)",
+  "Forensic audit",
+  "Tax audit support",
+  "Due diligence audit (e.g., mergers and acquisitions)",
+  "Environmental audit",
+  "Quality management systems audit",
+  "Risk assessment and control evaluation",
+  "Performance audit",
+  "Special-purpose audit",
+  "Fraud examination",
+  "Statutory audit",
+];
+
+const taxTasks = [
+  "Tax planning",
+  "Income tax preparation for individuals",
+  "Income tax preparation for businesses (corporations, partnerships, sole proprietorships)",
+  "Estate tax planning and preparation",
+  "Gift tax planning and preparation",
+  "Trust tax planning and preparation",
+  "Tax compliance services",
+  "Tax advisory services",
+  "Tax audit representation",
+  "International tax planning and compliance",
+  "Tax credits and incentives consulting",
+  "Sales tax consulting and compliance",
+  "Property tax consulting and compliance",
+  "Payroll tax consulting and compliance",
+  "Tax dispute resolution and litigation support",
+];
+
+const dueDiligenceTasks = [
+  "Financial due diligence",
+  "Legal due diligence",
+  "Tax due diligence",
+  "Commercial due diligence",
+  "Operational due diligence",
+  "Environmental due diligence",
+  "IT due diligence",
+  "Human resources due diligence",
+  "Intellectual property due diligence",
+  "Regulatory due diligence",
+];
+
+const complianceTasks = [
+  "Regulatory compliance assessment",
+  "Compliance program development and implementation",
+  "Compliance monitoring and reporting",
+  "Anti-money laundering (AML) compliance",
+  "Know Your Customer (KYC) compliance",
+  "Anti-bribery and corruption (ABC) compliance",
+  "Data privacy and protection compliance (e.g., GDPR, CCPA)",
+  "Health and safety compliance",
+  "Environmental compliance",
+  "Labor and employment law compliance",
+  "Trade compliance (e.g., import/export regulations)",
+  "Financial services compliance (e.g., SEC, FINRA)",
+  "Healthcare compliance (e.g., HIPAA)",
+  "Food safety compliance (e.g., FDA regulations)",
+  "Licensing and permits compliance",
+];
+
+export const  data = {
+  financialTasks,
+  itTasks,
+  reportingTasks,
+  complianceTasks,
+  taxTasks,
+  dueDiligenceTasks,
+  auditTasks,
+};
