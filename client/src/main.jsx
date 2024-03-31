@@ -8,8 +8,6 @@ import Auth0ProviderWithNavigate from './auth/Auth0ProviderWithNavigate.jsx';
 const root = createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-  <Auth0ProviderWithNavigate>
   <App></App>
-  </Auth0ProviderWithNavigate>
   </BrowserRouter>
 );

@@ -1,13 +1,23 @@
 import SignUp from '@/customComponents/Signup'
 import React from 'react'
 import NavigationBar from '@/customComponents/NavigationBar'
+import Footer from '@/customComponents/Footer'
 
 const SigninPage = () => {
     return (
-        <div className="flex flex-col h-screen">
-            <NavigationBar className="" />
-            <SignUp pathwise="sigin" className="flex-grow" />
-        </div>
+        <>
+            <div className=''>
+                <NavigationBar />
+            </div>
+            <div className="flex flex-col">
+                {/* Adjust height as needed */}
+                <SignUp pathwise="signin" className="flex-grow" />
+
+            </div>
+            <div>
+                <Footer />
+            </div>
+        </>
     )
 }
 
