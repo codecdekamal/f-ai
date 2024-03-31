@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Img from '../assets/google_icon.svg';
 import fbIcon from '../assets/fb_logo.webp';
 import { useNavigate } from 'react-router-dom';
@@ -6,10 +6,12 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 const SignUp = ({ pathwise }) => {
   const [loggedUser, setLoggedUser] = useState(undefined);
-  const { loginWithPopup, user } = useAuth0();
+  const { loginWithPopup, user, loginWithRedirect } = useAuth0();
   const navigate = useNavigate();
   const pathHeader = pathwise === "signup" ? "Sign Up" : "Log In";
   const path = pathwise === "signup" ? "/signin" : "/signup";
+
+
 
   const handleNavigate = () => {
     navigate(path);
@@ -17,10 +19,7 @@ const SignUp = ({ pathwise }) => {
 
   const handleGoogleLogin = async () => {
     try {
-      await loginWithPopup({
-        connection: 'google-oauth2',
-      });
-      setLoggedUser(user);
+      await loginWithRedirect({ connection: 'google-oauth2' });
     } catch (error) {
       console.error('Error logging in with Google:', error);
     }
@@ -28,23 +27,21 @@ const SignUp = ({ pathwise }) => {
 
   const handleEmailLogin = async () => {
     try {
-      await loginWithPopup({
-        connection: 'email',
+      await loginWithRedirect({
+        connection: "email",
       });
-      setLoggedUser(user);
     } catch (error) {
-      console.error('Error logging in with Email:', error);
+      console.error("Error logging in with Email:", error);
     }
   };
 
   const handleFacebookLogin = async () => {
     try {
-      await loginWithPopup({
-        connection: 'facebook',
+      await loginWithRedirect({
+        connection: "facebook",
       });
-      setLoggedUser(user);
     } catch (error) {
-      console.error('Error logging in with Facebook:', error);
+      console.error("Error logging in with Facebook:", error);
     }
   };
 

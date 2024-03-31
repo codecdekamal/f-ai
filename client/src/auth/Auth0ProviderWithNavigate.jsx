@@ -13,7 +13,7 @@ const Auth0ProviderWithNavigate = ({ children }) => {
   }
 
   const onRedirectCallback = (appState) => {
-    navigate(appState?.returnTo || "/home"); // Redirect to /home after successful authentication
+    navigate(appState?.returnTo || "/"); // Redirect to /home after successful authentication
   };
 
   return (
