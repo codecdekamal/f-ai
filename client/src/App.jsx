@@ -1,8 +1,10 @@
-import "./App.css";
-import HomePage from "./pages/HomePage";
-import { Routes,Route } from "react-router-dom";
-import SignUp from "./customComponents/Signup";
-import SigninPage from "./pages/SigninPage";
+import { Home } from 'lucide-react'
+import './App.css'
+import HomePage from './pages/HomePage'
+import { Routes, Route } from 'react-router-dom'
+import SignupPage from './pages/SignupPage'
+import SigninPage from './pages/SigninPage'
+import PlansAndPricingPage from './pages/PlansAndPricingPage'
 function App() {
   return (
     <>
