@@ -24,7 +24,7 @@ const ConnectPage = () => {
       <NavigationBar />
       <div className="flex flex-col items-center w-full mt-[10vh] text-[#808080]">
         <h1 className="text-3xl md:text-4xl font-bold  py-8">Our Services</h1>
-        <div className="max-w-6xl w-full px-4 py-8">
+        <div className="max-w-6xl w-full px-4 py-8 text-[#808080]">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 bg-[#131517]">
             {cardsData.map((item, index) => (
               <ConnectCards key={index} item={item} />
