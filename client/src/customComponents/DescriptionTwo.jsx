@@ -23,17 +23,17 @@ const DescriptionTwo = () => {
   return (
     <>
       <section>
-        <div className="lg:min-h-fit w-full bg-black/90 relative box-border px-16 py-10">
-          <div className=" border  border-gray-600 h-full w-full grid grid-cols-5">
+        <div className="lg:min-h-fit w-full bg-black/90 relative  px-16 py-10 md:pt-20">
+          <div className="md:border md:border-gray-600 h-full w-full grid md:grid-cols-5">
             <div className="col-span-2 h-3/4 ">
               <article className="flex flex-col gap-5 lg:px-28 pt-16 text-white px-10 text-balance">
-                <motion.div initial={{scale:0.5,opacity:0.5, x:-300}} whileInView={{opacity:1,x:0,scale:1}} transition={{duration:1.5}}>
+                <motion.div className='' initial={{scale:0.5,opacity:0.5, textAlign:"initial"}} whileInView={{opacity:1,textAlign:"center",scale:1}} transition={{duration:1.5}}>
                   <h1 className="font-roboto tracking-wide font-medium text-3xl capitalize">
                     Expert Financial Guidance for Your Business
                   </h1>
                 </motion.div>
-                <motion.div initial={{scale:0.5,opacity:0.5, x:-300}} whileInView={{opacity:1,x:0,scale:1}} transition={{duration:1.5}}>
-                  <p className="font-poppins leading-7 tracking-wide text-white/60">
+                <motion.div initial={{scale:0.5,opacity:0.5,  textAlign:"initial"}} whileInView={{opacity:1,textAlign:"center",scale:1}} transition={{duration:1.5}}>
+                  <p className="font-poppins leading-7 tracking-wide text-white/60 ">
                     At f-ai, we specialize in providing finance accounting,
                     bookkeeping, and financial reporting services to help
                     businesses like yours thrive. Our AI tool simplifies the
@@ -45,17 +45,17 @@ const DescriptionTwo = () => {
                 </motion.div>
               </article>
             </div>
-            <div className="relative col-span-3 lg:px-20 h-full border-l border-gray-600">
-              <div className=" grid gap-1 py-3 px-4 grid-cols-2 items-center gap-x-3 gap-y-4">
+            <div className="relative col-span-3 lg:px-20 h-full md:border-l border-gray-600 ">
+              <div className=" grid gap-1 py-3 px-4 md:grid-cols-2 items-center gap-x-3 gap-y-4">
                 <div className="grid col-span-1 gap-5">
-                  <div className="relative bottom-10 ">
+                  <div className="relative md:bottom-10 mt-36 md:mt-0">
                     {CardInfo.map((items, index) => {
                       if (index >= 2) {
                         return;
                       }
                       return (
                         <div
-                          className={`relative  ${items.classname} bottom-16`}
+                          className={`relative  ${items.classname} md:bottom-16`}
                         >
                           <MainCard items={items}></MainCard>
                         </div>
