@@ -16,11 +16,7 @@ function App() {
         <Route path='/plans-prices' element={<PlansAndPricingPage/>}></Route>
         <Route path='/connect' element = {<ConnectPage/>}></Route>
         <Route path="/vision" element={<Vision/>}> </Route>
-<<<<<<< HEAD
-        <Route path="/plans-prices" element={<PlansAndPricingPage/>}> </Route>
-=======
         <Route path="/pricing" element={<PlansAndPricingPage/>}> </Route>
->>>>>>> 0384c7a7695a9c1334684391966d22c616ab09b9
       </Routes>
     </>
   );
