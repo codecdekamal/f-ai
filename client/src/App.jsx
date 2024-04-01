@@ -6,6 +6,7 @@ import SigninPage from './pages/SigninPage'
 import PlansAndPricingPage from './pages/PlansAndPricingPage'
 import Vision from './pages/Vision'
 import ConnectPage from './pages/ConnectPage'
+import SubscriptonPage from './pages/SubscriptonPage'
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path='/connect' element = {<ConnectPage/>}></Route>
         <Route path="/vision" element={<Vision/>}> </Route>
         <Route path="/pricing" element={<PlansAndPricingPage/>}> </Route>
+        <Route path='/subscription' element={<SubscriptonPage/>}></Route>
       </Routes>
     </>
   );
